@@ -1,4 +1,5 @@
 import { Box, Heading, Flex, Image, Text } from '@chakra-ui/react';
+
 import Layout from 'components/Layout';
 
 // Chakra UI default breakpoints are set as "min-width" array values in Chakra theme
