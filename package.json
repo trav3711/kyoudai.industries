@@ -19,6 +19,7 @@
     "@chakra-ui/react": "^1.0.1",
     "@emotion/react": "^11.1.1",
     "@emotion/styled": "^11.0.0",
+    "bootstrap": "^5.0.0-beta1",
     "emotion-theming": "^11.0.0",
     "framer-motion": "^2.9.4",
     "next": "^10.0.3",
