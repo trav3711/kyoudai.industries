@@ -27,7 +27,7 @@ export default function Home() {
         </Link>
       </div>
       <div className={indexStyles.linkContainer}>
-        <Link href= 'https://github.com/trav3711/metrics'>
+        <Link href= './contact'>
           <a className={utilStyles.headingLg}>Contact Us</a>
         </Link>
       </div>
