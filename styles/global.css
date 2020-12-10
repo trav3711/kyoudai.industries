@@ -12,29 +12,24 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
 a,
 a:link,
 a:visited {
-  transition: text-decoration 0.4s;
   text-decoration: none;
-  color: #07c;
+  transition: color 0.4s;
+  color: #e32d2d;
   cursor: pointer;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #c6d2d2;
+  text-decoration: none;
+  color: #ffa6a6;
 }
 
 a:active {
-  transition: text-decoration 0.3s;
-  text-decoration: underline;
-  color: #c6d2d2;
+  text-decoration: none;
+  transition: color 0.3s;
+  color: #ffa6a6;
 }
 
 img {
