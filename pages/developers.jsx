@@ -18,6 +18,7 @@ export async function getStaticProps() {
 export default function developers({ allPostsData }) {
   return (
     <Layout>
+<<<<<<< HEAD
         {allPostsData.map(({ name, title, technologies, description }) => (
           <div className={utilStyles.developer_container}>
               <h1>{name}</h1>
@@ -25,6 +26,17 @@ export default function developers({ allPostsData }) {
               <p>{description}</p>
           </div>
         ))}
+=======
+        <ul className={utilStyles.list}>
+            {allPostsData.map(({ name, title, technologies, description }) => (
+              <div key={name} className={utilStyles.developer_container}>
+                  <h1>{name}</h1>
+                  <h3 className={utilStyles.headingLg}>{technologies}</h3>
+                  <p>{description}</p>
+              </div>
+            ))}
+          </ul>
+>>>>>>> 1b175f2427ad1fb5ba5fb6f61b3a80c4dfc6aff9
     </Layout>
   )
 };
