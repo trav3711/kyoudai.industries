@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/devs'
 
-import Card from '../components/developer_card'
 import utilStyles from '../styles/utils.module.css'
 
 export async function getStaticProps() {
