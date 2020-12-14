@@ -16,7 +16,7 @@ export default function Layout({ children, home }) {
           <>
             <div className={styles.headerHomeImage}>
               <Image
-                src='/../public/images/header_stamp.png'
+                src='/images/header_stamp.png'
                 alt='header stamp'
                 width={600}
                 height={700}
@@ -43,7 +43,7 @@ export default function Layout({ children, home }) {
           <div className={styles.headerImage}>
             <Link href="/">
               <Image
-                src='/../public/images/header_stamp.png'
+                src='/images/header_stamp.png'
                 alt='header stamp'
                 width={600}
                 height={700}
