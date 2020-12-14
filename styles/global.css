@@ -6,6 +6,8 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  background: #dedad7;
+  color: #45403d;
 }
 
 * {
@@ -17,19 +19,19 @@ a:link,
 a:visited {
   text-decoration: none;
   transition: color 0.4s;
-  color: #e32d2d;
+  color: #877365;
   cursor: pointer;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ffa6a6;
+  color: #e39b6d;
 }
 
 a:active {
   text-decoration: none;
   transition: color 0.3s;
-  color: #ffa6a6;
+  color: #e39b6d;
 }
 
 img {
