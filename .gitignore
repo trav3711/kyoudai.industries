@@ -2,4 +2,4 @@ node_modules
 .next
 .env
 *.log
-devs/example.md
+public/devs/example.md
