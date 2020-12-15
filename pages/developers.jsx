@@ -18,6 +18,9 @@ export async function getStaticProps() {
 export default function developers({ allPostsData }) {
   return (
     <Layout>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
         {allPostsData.map(({ name, title, technologies, description, portfolio }) => (
           <div key={name} className={utilStyles.developer_container}>
               <h1>{name}</h1>
