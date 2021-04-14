@@ -5,6 +5,9 @@ import utilStyles from '../styles/utils.module.css'
 
 const about = () => (
   <Layout>
+    <Head>
+      <title>{siteTitle}</title>
+    </Head>
     <h2 className={utilStyles.pageHeading}>Who We Are</h2>
     <p className={utilStyles.headingLg}>
       Kyoudai Industries is a collective made up of a group of friends
