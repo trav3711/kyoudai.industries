@@ -24,50 +24,50 @@ export default function Layout({ children, home }) {
             </div>
             <h1 className={utilStyles.headingXl}>{english_name}</h1>
             <nav>
-                <Link href="/about">
-                  <a className={styles.nav_link}>About</a>
-                </Link>
-                <Link href="/developers">
-                  <a className={styles.nav_link}>Developers</a>
-                </Link>
-                <Link href="/projects">
-                  <a className={styles.nav_link}>Projects</a>
-                </Link>
-                <Link href="/contact">
-                  <a className={styles.nav_link}>Contact</a>
-                </Link>
+              <Link href="/about">
+                <a className={styles.nav_link}>About</a>
+              </Link>
+              <Link href="/developers">
+                <a className={styles.nav_link}>Developers</a>
+              </Link>
+              <Link href="/projects">
+                <a className={styles.nav_link}>Projects</a>
+              </Link>
+              <Link href="/contact">
+                <a className={styles.nav_link}>Contact</a>
+              </Link>
             </nav>
           </>
         ) : (
           <>
-          <div className={styles.headerImage}>
-            <Link href="/">
-              <Image
-                src='/images/header_stamp.png'
-                alt='header stamp'
-                width={600}
-                height={700}
-              />
-            </Link>
-          </div>
+            <div className={styles.headerImage}>
+              <Link href="/">
+                <Image
+                  src='/images/header_stamp.png'
+                  alt='header stamp'
+                  width={600}
+                  height={700}
+                />
+              </Link>
+            </div>
             <nav>
-                <Link href="/about">
-                  <a className={styles.nav_link}>About</a>
-                </Link>
-                <Link href="/developers">
-                  <a className={styles.nav_link}>Developers</a>
-                </Link>
-                <Link href="/projects">
-                  <a className={styles.nav_link}>Projects</a>
-                </Link>
-                <Link href="/contact">
-                  <a className={styles.nav_link}>Contact</a>
-                </Link>
+              <Link href="/about">
+                <a className={styles.nav_link}>About</a>
+              </Link>
+              <Link href="/developers">
+                <a className={styles.nav_link}>Developers</a>
+              </Link>
+              <Link href="/projects">
+                <a className={styles.nav_link}>Projects</a>
+              </Link>
+              <Link href="/contact">
+                <a className={styles.nav_link}>Contact</a>
+              </Link>
             </nav>
           </>
         )}
       </header>
-      <main>{ children }</main>
+      <main>{children}</main>
     </div>
   )
 }

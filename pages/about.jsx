@@ -19,10 +19,7 @@ const about = () => (
       engineering and technological skills to whoever may be seeking them out.
     </p>
     <p className={utilStyles.headingLg}>
-        Feel free to browse our
-        <Link href="/developers"><a> current developers</a></Link>,
-        <Link href="/projects"><a> projects</a></Link> we have worked on, and
-        <Link href="/contact"><a> contact</a></Link> us if you have any questions
+      Feel free to browse our <Link href="/developers">current developers</Link>, <Link href="/projects">projects</Link> we have worked on, and <Link href="/contact">contact</Link> us if you have any questions.
     </p>
   </Layout>
 )
