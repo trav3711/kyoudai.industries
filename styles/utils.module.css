@@ -73,14 +73,23 @@
   font-size: 1.5rem;
 }
 
-.developer_container{
+.developer_container {
   float: left;
   flex: left;
-  max-width: 5rem;
-  min-width: 300px;
   min-height: 15rem;
   max-height: 20rem;
   padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin: 0;
+}
+
+.developer_container h1 {
+  margin: 0;
+}
+
+.developer_container h3 {
+  margin: 0;
+}
+
+.developer_container h5 {
+  margin: 0;
 }
