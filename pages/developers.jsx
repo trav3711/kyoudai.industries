@@ -21,16 +21,14 @@ export default function developers({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-        {allPostsData.map(({ name, title, technologies, description, portfolio }) => (
-          <div key={name} className={utilStyles.developer_container}>
-            <Link href={portfolio}>
-              <a target="_blank" rel="noopener noreferrer"><h1>{name}</h1></a>
-            </Link>
-              <h3 className={utilStyles.headingLg}>{title}</h3>
-              <h5>{technologies}</h5>
-              <p>{description}</p>
-          </div>
-        ))}
+      {allPostsData.map(({ name, title, technologies, description, portfolio }) => (
+        <div key={name} className={utilStyles.developer_container}>
+          <h1><Link href={portfolio}>{name}</Link></h1>
+          <h3 className={utilStyles.headingLg}>{title}</h3>
+          <h5>{technologies}</h5>
+          <p>{description}</p>
+        </div>
+      ))}
     </Layout>
   )
 };

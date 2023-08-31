@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../components/Layout'
 
 function Home() {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
