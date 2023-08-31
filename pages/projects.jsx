@@ -9,7 +9,7 @@ const projects = () => (
       <title>{siteTitle}</title>
     </Head>
     <h2 className={utilStyles.pageHeading}>Our Work</h2>
-    <p className={utilStyles.description}>There's nothing here yet...</p>
+    <p className={utilStyles.description}>There is nothing here yet...</p>
   </Layout>
 )
 
