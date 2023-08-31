@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/layout.module.css'
@@ -8,66 +7,19 @@ const japanese_name = '兄弟事業'
 const english_name = 'Kyoudai Industries'
 export const siteTitle = 'Kyoudai Industries'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        {home ? (
-          <>
-            <div className={styles.headerHomeImage}>
-              <Image
-                src='/images/header_stamp.png'
-                alt='header stamp'
-                width={600}
-                height={700}
-              />
-            </div>
-            <h1 className={utilStyles.headingXl}>{english_name}</h1>
-            <nav>
-                <Link href="/about">
-                  <a className={styles.nav_link}>About</a>
-                </Link>
-                <Link href="/developers">
-                  <a className={styles.nav_link}>Developers</a>
-                </Link>
-                <Link href="/projects">
-                  <a className={styles.nav_link}>Projects</a>
-                </Link>
-                <Link href="/contact">
-                  <a className={styles.nav_link}>Contact</a>
-                </Link>
-            </nav>
-          </>
-        ) : (
-          <>
-          <div className={styles.headerImage}>
-            <Link href="/">
-              <Image
-                src='/images/header_stamp.png'
-                alt='header stamp'
-                width={600}
-                height={700}
-              />
-            </Link>
-          </div>
-            <nav>
-                <Link href="/about">
-                  <a className={styles.nav_link}>About</a>
-                </Link>
-                <Link href="/developers">
-                  <a className={styles.nav_link}>Developers</a>
-                </Link>
-                <Link href="/projects">
-                  <a className={styles.nav_link}>Projects</a>
-                </Link>
-                <Link href="/contact">
-                  <a className={styles.nav_link}>Contact</a>
-                </Link>
-            </nav>
-          </>
-        )}
+        <h1 className={utilStyles.headingXl} title={japanese_name}>{english_name}</h1>
+        <nav>
+          <Link href="/about" className={styles.nav_link}>About</Link>
+          <Link href="/developers" className={styles.nav_link}>Developers</Link>
+          <Link href="/projects" className={styles.nav_link}>Projects</Link>
+          <Link href="/contact" className={styles.nav_link}>Contact</Link>
+        </nav>
       </header>
-      <main>{ children }</main>
+      <main>{children}</main>
     </div>
   )
 }
